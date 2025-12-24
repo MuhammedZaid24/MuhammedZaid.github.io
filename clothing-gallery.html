@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store E-Commerce - Gallery</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Reuses your main CSS -->
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .back-btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background: #ff4d4d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #1a374d;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <div class="section" style="text-align: center;">
+        <h1>Clothing Store E-Commerce Website</h1>
+        <p>Academic project built with HTML, CSS, PHP, and MySQL. Features product listings, user registration, shopping cart, and basic admin panel.</p>
+        
+        <div class="gallery">
+            <!-- Add your screenshots here -->
+            <img src="images/localhost_velvet-vogue_index.php (1).png" alt="Home Page">
+            <img src="images/localhost_velvet-vogue_products.php.png" alt="Product Listings">
+            <img src="images/localhost_velvet-vogue_product.php_id=10.png" alt="Product Detail Page">
+            <img src="images/localhost_velvet-vogue_cart.php.png" alt="Shopping Cart">
+            <!-- Add as many as you want -->
+        </div>
+    </div>
+</body>
+</html>
